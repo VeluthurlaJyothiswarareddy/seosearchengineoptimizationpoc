@@ -13,6 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+   verification: {
+    google: "bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4"
+  },
   metadataBase: new URL("https://your-domain.com"),
   title: {
     default: "Learn Java Streams",
