@@ -17,10 +17,6 @@ export const metadata: Metadata = {
     "https://searchengineoptimization-kappa.vercel.app"
   ),
 
-  verification: {
-    google: "bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4",
-  },
-
   title: {
     default: "Learn Java Streams",
     template: "%s | Learn Java Streams",
@@ -29,19 +25,18 @@ export const metadata: Metadata = {
   description:
     "Complete Java Streams tutorial with examples and interview questions.",
 
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   openGraph: {
     title: "Learn Java Streams",
     description:
       "Complete Java Streams tutorial with examples and interview questions.",
     url: "https://searchengineoptimization-kappa.vercel.app",
     siteName: "Learn Java Streams",
-    locale: "en_US",
     type: "website",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
@@ -55,6 +50,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
+      <head>
+        <meta
+          name="google-site-verification"
+          content="bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4"
+        />
+      </head>
+
       <body>{children}</body>
     </html>
   );
